@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary70"
+    tools:context=".loginActivity2">
+
+    <ImageView
+        android:id="@+id/login_app_logo"
+        android:layout_width="254dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/applogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <EditText
+        android:id="@+id/login_phone_number_input"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="120dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_app_logo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="246dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="number"
+        android:textColorLink="#0E0D0D"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_phone_number_input"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/final_login_button"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="LOGIN"
+        android:textColor="#0B0A0A"
+        android:textColorHighlight="#0B0B0B"
+        android:textColorLink="#0B0A0A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_input"
+        app:rippleColor="#191818" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
