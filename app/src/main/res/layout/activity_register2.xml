@@ -15,8 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/applogo"
-        tools:layout_editor_absoluteY="88dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="88dp" />
 
     <EditText
         android:id="@+id/register_username_input"
@@ -34,12 +34,12 @@
 
 
     <EditText
-        android:id="@+id/register_phone_number"
+        android:id="@+id/register_email"
         android:layout_width="289dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
-        android:hint="PhoneNumber"
-        android:inputType="number"
+        android:hint="email"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_username_input"
@@ -49,22 +49,22 @@
         android:id="@+id/editText"
         android:layout_width="284dp"
         android:layout_height="39dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:hint="Password"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/register_email"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/register_createacc_button"
+        android:id="@+id/register_sign_up_button"
         android:layout_width="273dp"
         android:layout_height="42dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button"
-        android:text="Create Account"
+        android:text="Sign up"
         android:textColor="#040303"
         android:textColorHighlight="#090808"
         android:textColorLink="#0B0A0A"
